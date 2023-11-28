@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Produtos - Minha Loja</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <ul class="cabecalho__links">
+                <li><a href="/home/index.html" class="cabecalho__links__link">Página Inicial</a></li>
+                <li><a href="/users/users.html" class="cabecalho__links__link">Usuários</a></li>
+                <li><a href="/products/products.html" class="cabecalho__links__link">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="titulo">Adicionar Produto</h1>
+            <div class="container">
+                <form id="userForm" class="form">
+                    <div class="campo-formulario">
+                        <label for="nome"> Título: </label>
+                        <input type="text" name="nome" id="nome" autocomplete="off">
+                        <small></small>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="descricao">Descrição:</label>
+                        <div class="campo-formulario input-group">
+                            <input type="text" name="descricao" id="descricao" autocomplete="off">
+                            <small></small>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <div class="campo-formulario">
+                            <label for="preco"> Preço: </label>
+                            <input type="number" name="preco" id="preco" autocomplete="off">
+                            <small></small>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="marca"> Marca: </label>
+                        <input type="text" name="marca" id="marca" autocomplete="off">
+                        <small></small>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="categoria"> Categoria: </label>
+                        <input type="text" name="categoria" id="categoria" autocomplete="off">
+                        <small></small>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="idade"> Foto: </label>
+                        <input type="url" name="foto" id="image" autocomplete="off">
+                        <small></small>
+                    </div>
+                        
+            
+                    <div class="campo-formulario">
+                        <input class="btn" type="submit" value="Registrar" >
+                    </div>
+                </form>
+            </div>
+            <table id="productsTable" class="tabela">
+                <tr>
+                    <th class="tabela__itens">Título</th>
+                    <th class="tabela__itens">Descrição</th>
+                    <th class="tabela__itens">Preço</th>
+                    <th class="tabela__itens">Marca</th>
+                    <th class="tabela__itens">Categoria</th>
+                    <th class="tabela__itens">Foto</th>
+                </tr>
+            </table>
+            
+    </main>
+    <script src="/products/productsSripts.js"></script>
+</body>
+</html>

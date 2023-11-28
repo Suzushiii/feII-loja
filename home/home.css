@@ -1,0 +1,20 @@
+.main-main{
+    padding-top: 100px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo__main{
+    font-family: var(--fonte);
+    color: var(--cor-fonte-titulo);
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.paragrafo__main {
+    font-family: var(--fonte);
+    color: var(--cor-fonte-principal);
+    font-size: x-large;  
+    margin-top: 50px;
+}

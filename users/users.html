@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Usuários - Minha Loja</title>
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <ul class="cabecalho__links">
+                <li><a href="/home/index.html" class="cabecalho__links__link">Página Inicial</a></li>
+                <li><a href="/users/users.html" class="cabecalho__links__link">Usuários</a></li>
+                <li><a href="/products/products.html" class="cabecalho__links__link">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">   
+        <h1 class="titulo">Adicionar Usuário</h1>
+
+        <div class="container">
+            <form id="userForm" class="form">
+                <div class="campo-formulario">
+                    <label for="nome"> Nome: </label>
+                    <input type="text" name="nome" id="nome" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="campo-formulario">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <div class="campo-formulario input-group">
+                        <input type="text" name="sobrenome" id="sobrenome" autocomplete="off">
+                        <small></small>
+                    </div>
+                </div>
+                <div class="campo-formulario">
+                    <div class="campo-formulario">
+                        <label for="email"> Email: </label>
+                        <input type="email" name="email" id="email" autocomplete="off">
+                        <small></small>
+                    </div>
+                </div>
+                <div class="campo-formulario">
+                    <label for="idade"> Idade: </label>
+                    <input type="number" name="idade" id="idade" autocomplete="off">
+                    <small></small>
+                </div>
+                <div class="campo-formulario">
+                    <label for="idade"> Foto: </label>
+                    <input type="url" name="foto" id="image" autocomplete="off">
+
+                </div>
+                    
+        
+                <div class="campo-formulario">
+                    <input class="btn" type="submit" value="Registrar" >
+                </div>
+            </form>
+        </div>
+
+        <table id="usersTable" class="tabela">
+            <tr>
+                <th class="tabela__itens">Nome</th>
+                <th class="tabela__itens">Sobrenome</th>
+                <th class="tabela__itens">Email</th>
+                <th class="tabela__itens">Idade</th>
+                <th class="tabela__itens">Foto</th>
+            </tr>
+        </table>
+        <script src="/users/usersScripts.js"></script>
+</body>
+</html>
